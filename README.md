@@ -5,7 +5,7 @@
 ![MySQL](https://img.shields.io/badge/MySQL-v8.0.17-red)
 ![express](https://img.shields.io/badge/express-v4.17.1-blue)
 
-the overall module for `local-login` in web(pc, mobile)
+the overall module for `sign up & sign in` in web(pc, mobile)
 
 # features
 
