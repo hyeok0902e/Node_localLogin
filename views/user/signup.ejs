@@ -1,6 +1,11 @@
 <h2>Sign Up</h2>
 
-<form class="signup-form" action="" method="post">
+
+<% if (typeof signupErrorMsg != 'undefined' && signupErrorMsg) { %>
+  <p class="alert"><%- signupErrorMsg %></p>
+<% } %>
+
+<form class="signup-form" action="/signup" method="post">
   <div class="input-group">
     <label for="email" class="signup-label">이메일</label>
     <input type="email" name="email" id="check-email">
@@ -18,10 +23,10 @@
 
   <div class="input-group">
     <label for="addr" class="signup-label">주소</label>
-    <input type="text" name="addr" readonly> 
+    <input type="text" name="zipcord" placeholder="우편번호" readonly> 
+    <input type="text" name="addr_full" placeholder="주소를 검색하세요." readonly> 
     <button id="search-addr">검색</button><br>
-    <input type="text" name="addr-detail">
-    
+    <input type="text" name="addr_detail">
   </div>
 
   <div class="input-group">

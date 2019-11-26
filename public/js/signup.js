@@ -1,12 +1,16 @@
+// addr api - daum (kakao)
 document.getElementById("search-addr").onclick = function(e) {
   e.preventDefault(); // 기존 이벤트를 초기화
   new daum.Postcode({
     oncomplete: function(data) {
         // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분입니다.
         // 예제를 참고하여 다양한 활용법을 확인해 보세요.
+        console.log(data);
     }
   }).open();
 };
+
+// Regex check
 // key 관련 이벤트는 => onkeydown, onkeyup, onkeypress 가 있음 // onkeypress는 백스페이스 인식 불가 
 // 정규식 표현 실시간 비교 시 => onkeyup이 가장 정확함
 
