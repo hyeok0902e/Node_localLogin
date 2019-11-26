@@ -10,6 +10,21 @@ the overall module for `sign up & sign in` in web(pc, mobile)
 # features
 
 - javascript Regex compare _email, phone, nickname ..
+```
+<!-- Regex: email -->
+regExp = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i; // 이메일
+
+<!-- Regex: phone -->
+// 010-7777-7777
+regExp = /^\d{3}-\d{3,4}-\d{4}$/; // 휴대폰
+
+<!-- Example: test regex with value -->
+if(!regExp.test(e.target.value)) {
+  console.log(false);
+} else {
+  console.log(true);
+}
+```
 - search api for address _[daum api (kakao)](http://postcode.map.daum.net/guide)
 ```
 <!-- javascript code (/public/js/signup.js) -->

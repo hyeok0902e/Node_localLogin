@@ -33,7 +33,6 @@ router.post('/signup', async (req, res, next) => {
             req.flash('signupErrorMsg', 'please enter all information inside of form!');
             res.redirect('/signup');
         }
-
         
     } catch (err) {
         console.log(err);
