@@ -96,7 +96,15 @@ bcrypt.compare(myPlaintextPassword, hash, function(err, res) {
 });
 ```
 
+### cancel git commit
+- canel latest commit & preservate code files in working directory
+```
+<!-- check commit list -->
+$ git log 
 
+<!-- cancel latest commit -->
+$ git reset --soft HEAD^
+```
 
 # :keyboard: To-Do
 ### 
