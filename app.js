@@ -44,6 +44,11 @@ app.use(session({
 }));
 app.use(flash());
 
+app.use((req, res, next) => {
+  res.locals.test = "hyeoke";
+  next();
+});
+
 app.use('/', indexRouter);
 
 app.use((req, res, next) => {

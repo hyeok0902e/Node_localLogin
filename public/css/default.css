@@ -2,7 +2,25 @@
   display: block;
   width: 150px; 
 }
-
 .alert {
   color: red;
 }
+
+/* message */
+.err-msg {
+  color: red;
+}
+
+/* button */
+.sign_btn {
+  width: 180px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  background-color: darkorange;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  opacity: 60%;
+}
+

@@ -14,13 +14,14 @@
   <body> 
     <header>
       <div class="logo">
+        <%= test%>
         <a href="/">HOME</a>
       </div>
       
       <nav>
         <ul>
           <li><a href="/signup">회원가입</a></li>
-       
+          <li><a href="/signin">로그인</a></li>
         </ul>
       </nav>
     </header>
@@ -28,7 +29,7 @@
       <%- body %>
     </div>
 
-    <script src="/js/signup.js" type="text/javascript"></script>
+    
     <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
     <%- script %>
   </body>
